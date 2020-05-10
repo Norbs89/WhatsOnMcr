@@ -12,7 +12,7 @@ export const fetchFonts = () => {
 export const searchEventsByTitle = (title, events) => {
   if (events.length !== 0) {
     let filteredEvents = events.filter((event) =>
-      event.name.toLowerCase().includes(title)
+      event.name.toLowerCase().includes(title.toLowerCase())
     );
     return filteredEvents;
   }

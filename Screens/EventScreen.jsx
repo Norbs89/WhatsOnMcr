@@ -173,7 +173,7 @@ const styles = StyleSheet.create({
     fontFamily: "BalooChettan2-SemiBold",
   },
   page: {
-    marginTop: hp("15%"),
+    marginTop: hp("12%"),
   },
 });
 

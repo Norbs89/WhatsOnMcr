@@ -21,6 +21,7 @@ const ListItems = ({ data, navigation }) => {
   return (
     <FlatList
       data={data}
+      contentContainerStyle={{ paddingBottom: hp("20%") }}
       renderItem={({ item }) => {
         return (
           <TouchableOpacity
