@@ -16,15 +16,33 @@ const App = () => {
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{ title: "Home" }}
+          options={{
+            title: "Home",
+            headerShown: false,
+          }}
         />
-        <Stack.Screen name="Sports" component={SportScreen} />
-        <Stack.Screen name="Concerts" component={ConcertScreen} />
-        <Stack.Screen name="Experiences" component={ExperienceScreen} />
+        <Stack.Screen
+          name="Sports"
+          component={SportScreen}
+          options={{ headerTransparent: true }}
+        />
+        <Stack.Screen
+          name="Concerts"
+          component={ConcertScreen}
+          options={{ headerTransparent: true }}
+        />
+        <Stack.Screen
+          name="Experiences"
+          component={ExperienceScreen}
+          options={{ headerTransparent: true }}
+        />
         <Stack.Screen
           name="Event"
           component={EventScreen}
-          options={({ route }) => ({ title: route.params.name })}
+          options={({ route }) => ({
+            title: route.params.name,
+            headerTransparent: true,
+          })}
         />
       </Stack.Navigator>
     </NavigationContainer>

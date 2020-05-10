@@ -50,7 +50,7 @@ const HomeScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   main: {
-    marginTop: hp("2%"),
+    marginTop: hp("10%"),
     justifyContent: "center",
     alignItems: "center",
     alignSelf: "center",

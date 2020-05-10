@@ -36,7 +36,7 @@ const SportScreen = ({ navigation }) => {
       source={require("../assets/appBckgr.png")}
       style={styles.bck}
     >
-      <View>
+      <View style={styles.main}>
         {!isLoaded ? (
           <AppLoading
             startAsync={fetchFonts}
@@ -71,6 +71,9 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontFamily: "BalooChettan2-SemiBold",
     color: "#41393E",
+  },
+  main: {
+    marginTop: hp("13%"),
   },
 });
 

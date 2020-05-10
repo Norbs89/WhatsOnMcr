@@ -37,7 +37,7 @@ const EventScreen = ({ route }) => {
       source={require("../assets/appBckgr.png")}
       style={styles.bck}
     >
-      <View>
+      <View style={styles.page}>
         {isLoading ? (
           <ActivityIndicator />
         ) : !isLoaded ? (
@@ -171,6 +171,9 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: hp("2.2%"),
     fontFamily: "BalooChettan2-SemiBold",
+  },
+  page: {
+    marginTop: hp("10%"),
   },
 });
 
