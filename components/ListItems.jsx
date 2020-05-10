@@ -56,14 +56,14 @@ const ListItems = ({ data, navigation }) => {
                   />
                 ) : (
                   <View style={styles.textWrap}>
-                    <Text style={styles.specText}>{item.name}</Text>
+                    <Text style={styles.name}>{item.name}</Text>
                     <Text style={styles.text}>
                       Date: {item.dates.start.localDate}
                     </Text>
                     <Text style={styles.text}>
                       Venue: {item._embedded.venues[0].name}
                     </Text>
-                    <Text style={styles.specText}>Tap for more info!</Text>
+                    <Text style={styles.info}>Tap for more info!</Text>
                   </View>
                 )}
               </View>
@@ -104,10 +104,18 @@ const styles = StyleSheet.create({
     fontFamily: "BalooChettan2-SemiBold",
     color: "#FFCB47",
   },
-  specText: {
+  info: {
+    marginTop: hp("2%"),
     fontSize: hp("2.2%"),
     textAlign: "center",
     fontFamily: "GochiHand-Regular",
+    color: "#F6F7EB",
+  },
+  name: {
+    marginBottom: hp("1%"),
+    fontSize: hp("2%"),
+    textAlign: "center",
+    fontFamily: "BalooChettan2-SemiBold",
     color: "#F6F7EB",
   },
 });

@@ -50,7 +50,7 @@ const EventScreen = ({ route }) => {
         ) : (
           <View style={styles.main}>
             <Image
-              source={{ uri: `${currentEvent.images[0].url}` }}
+              source={{ uri: `${currentEvent.images[1].url}` }}
               style={styles.image}
             />
             <Text style={styles.name}>{currentEvent.name}</Text>
