@@ -10,6 +10,10 @@ import ExperienceScreen from "../Screens/ExperienceScreen";
 import SportScreen from "../Screens/SportScreen";
 import ConcertScreen from "../Screens/ConcertScreen";
 import EventScreen from "../Screens/EventScreen";
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from "react-native-responsive-screen";
 
 const Stack = createStackNavigator();
 
@@ -43,7 +47,7 @@ const Header = ({ params }) => {
               headerTransparent: true,
               headerTintColor: "#FFCB47",
               headerTitleStyle: {
-                fontSize: 30,
+                fontSize: hp("5%"),
                 fontFamily: "GochiHand-Regular",
               },
               headerBackground: () => (
@@ -63,7 +67,7 @@ const Header = ({ params }) => {
               headerTransparent: true,
               headerTintColor: "#FFCB47",
               headerTitleStyle: {
-                fontSize: 30,
+                fontSize: hp("5%"),
                 fontFamily: "GochiHand-Regular",
               },
               headerBackground: () => (
@@ -83,7 +87,7 @@ const Header = ({ params }) => {
               headerTransparent: true,
               headerTintColor: "#FFCB47",
               headerTitleStyle: {
-                fontSize: 30,
+                fontSize: hp("5%"),
                 fontFamily: "GochiHand-Regular",
               },
               headerBackground: () => (
@@ -104,7 +108,7 @@ const Header = ({ params }) => {
               headerTransparent: true,
               headerTintColor: "#FFCB47",
               headerTitleStyle: {
-                fontSize: 20,
+                fontSize: hp("4%"),
                 fontFamily: "BebasNeue-Regular",
               },
               headerBackground: () => (

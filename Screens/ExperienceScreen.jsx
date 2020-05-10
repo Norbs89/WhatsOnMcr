@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     color: "#41393E",
   },
   main: {
-    marginTop: hp("10%"),
+    marginTop: hp("15%"),
   },
 });
 
