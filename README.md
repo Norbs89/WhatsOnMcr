@@ -43,6 +43,7 @@ npm start
 
 After a quick automatic expo-CLI install, this command will open up a browser window on your system, with a QR code present.
 You will need to install an app called EXPO on your mobile device.
-To see the project come to life, scan the ake sure your client is still running on your system!
+To see the project come to life, scan the QR code on screen.
+Make sure your client is still running on your system!
 
 ## Thank you for looking! Have a great day!
